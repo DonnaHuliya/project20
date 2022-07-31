@@ -23,11 +23,7 @@ class TestDirectorService:
         assert new_director is not None
 
     def test_update(self):
-        director_d = {
-            'id': 3,
-            "name" = "Leonid",
-        }
-        self.director_service.update(director_d)
+        director = self.director_service.update(1)
 
     def test_delete(self):
         res = self.director_service.delete(1)
